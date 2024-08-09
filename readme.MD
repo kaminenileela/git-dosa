@@ -4,6 +4,7 @@
 * git checkout -b --> create new branch and change the workspace into new branch
 * git log --oneline
 
+
 Merge is 2 types: 1. Merge 2. rebase
 
 Merging
@@ -13,6 +14,7 @@ Merging
 3. raise PR (pull request)
 4. get the approval
 5. then merge it 
+
 
 Merge gives us a new merge commit which has 2 parents, we can clearly see the history.
 
@@ -25,8 +27,6 @@ Rebase ---> change the base
 3. no history is preserved, it is rewritten as if it is done in main branch
 4. looks clean, linear 
 
-conflict
--------------
 
 
 
