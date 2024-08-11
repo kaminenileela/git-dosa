@@ -6,6 +6,8 @@
 * git checkout main ---> to move from another branch to main
 * git rebase main --> when conflict araises pull main branch and do rebase to see what are the changes conflicting
 * git rebase --continue ---> to see next changes. do necessary changes and commit.
+* git status --> shows us status
+* git diff <file name> ---> shows difference once code is committed.(does not show when it is in staging area)
 
 
 Merging
@@ -46,3 +48,26 @@ another branch is trying to merge the changes, then conflict will come
 
 ![alt text](rebase.JPG)
 
+Before you raise PR, check main branch moved forward or not?
+git checkout main 
+git pull origin main
+
+* pull before push.
+
+git reset vs git revert
+------------------------
+Reset undo the changes, it is destructive operation. it will change the history and commit id. it has 3 types
+
+1.soft
+2.mixed
+3.hard
+
+index/staging/temp area --> git add
+
+Lets suppose we did ---> git add . ; git commit -m ""
+
+git reset --soft HEAD~1 --> soft will reset the commits, but keep the changes in staging area
+
+git reset HEAD~1 --> mixed will reset the commit as well as remove changes from staging area but we can see changes in workspace.
+
+git reset --hard HEAD~2---> resets the commit, changes commit, staging and workspace.
