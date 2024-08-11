@@ -7,7 +7,7 @@
 * git rebase main --> when conflict araises pull main branch and do rebase to see what are the changes conflicting
 * git rebase --continue ---> to see next changes. do necessary changes and commit.
 * git status --> shows us status
-* git diff <file name> ---> shows difference once code is committed.(does not show when it is in staging area)
+* git diff <file name> ---> shows difference 
 
 
 Merging
@@ -70,4 +70,17 @@ git reset --soft HEAD~1 --> soft will reset the commits, but keep the changes in
 
 git reset HEAD~1 --> mixed will reset the commit as well as remove changes from staging area but we can see changes in workspace.
 
-git reset --hard HEAD~2---> resets the commit, changes commit, staging and workspace.
+git reset --hard HEAD~2---> resets the commit. changes commit, staging area and workspace.
+
+revert
+------
+changes are pushed to remote, others pulled your changes already.
+reset is not recommended if changes are already pushed to remote.
+revert is safe if changes are pushed to remote already.revert will not change the history.
+revert should not be done directly. it should be one by one and them commit after all are removed.
+
+
+
+:%d
+i-->to insert
+esc :wq!
