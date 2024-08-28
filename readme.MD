@@ -8,7 +8,7 @@
 * git rebase --continue ---> to see next changes. do necessary changes and commit.
 * git status --> shows us status
 * git diff <file name> ---> shows difference 
-
+* git remote set-url origin <git repo url> ---> to change and set new remote url
 
 Merging
 --------
